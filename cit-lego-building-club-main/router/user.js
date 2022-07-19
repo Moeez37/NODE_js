@@ -1,0 +1,12 @@
+const user=require('../controller/user');
+const express=require('express');
+const fs=require('fs');
+const path = require('path');
+const router=express.Router();
+router.use('/events',user.events);
+//router.use('/enter_web',user.checkuser);
+router.use('/contact-us',user.contactus);
+router.use('/membership',user.membership);
+router.use('/index',user.index);
+router.use('/',user.index);
+module.exports=router;

@@ -1,0 +1,108 @@
+<%-include('./include/head.ejs')%>
+<%-include('./include/header.ejs')%>
+		<main>
+			<h2>Membership Information</h2>
+
+			<p>You can apply here to join our club and get a membership.</p>
+
+			<form
+				action="https://webdevcit.com/displayvalues.php"
+				method="post"
+			>
+				<div class="form-control">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required />
+				</div>
+				<div class="form-control">
+					<label for="email">Email address:</label>
+					<input type="email" id="email" name="email" required />
+				</div>
+				<div class="form-control">
+					<label for="tel">Contact number:</label>
+					<input type="tel" id="tel" name="tel" required />
+				</div>
+				<div class="form-control">
+					<label for="contact-method">
+						Preferred method of contact:
+					</label>
+					<select name="contact-method" id="contact-method" required>
+						<option value="" disabled selected>
+							Select preferred contact method
+						</option>
+						<option value="email">Email</option>
+						<option value="zoom">Zoom</option>
+						<option value="skype">Skype</option>
+						<option value="whatsapp">WhatsApp</option>
+						<option value="viber">Viber</option>
+					</select>
+				</div>
+				<div class="form-control">
+					<label for="dob">Date of birth:</label>
+					<input type="date" name="dob" id="dob" required />
+				</div>
+				<div class="form-control">
+					<div>Level of experience in LEGO:</div>
+					<div>
+						<label for="novice">
+							<input
+								type="radio"
+								name="level"
+								id="novice"
+								value="novice"
+							/>
+							Novice
+						</label>
+						<label for="competent">
+							<input
+								type="radio"
+								name="level"
+								id="competent"
+								value="competent"
+							/>
+							Competent
+						</label>
+						<label for="expert">
+							<input
+								type="radio"
+								name="level"
+								id="expert"
+								value="expert"
+							/>
+							Expert
+						</label>
+					</div>
+				</div>
+				<div class="form-control">
+					<label for="special-requests"
+						>Preference of LEGO sets:</label
+					>
+					<select
+						name="special-requests"
+						id="special-requests"
+						multiple
+					>
+						<optgroup label="LEGO sets">
+							<option value="lego-city-set">LEGO City</option>
+							<option value="technic-set">Technic</option>
+							<option value="star-wars-set">Star Wars</option>
+						</optgroup>
+					</select>
+				</div>
+				<div class="form-control">
+					Competitions:
+					<label for="competitions">
+						<input
+							type="checkbox"
+							name="competitions"
+							id="competitions"
+						/>
+						I am interested in taking part in competitions.
+					</label>
+				</div>
+				<div class="buttons">
+					<button type="submit" id="submit">Submit</button>
+					<button type="reset" id="cancel">Cancel</button>
+				</div>
+			</form>
+		</main>
+<%-include('./include/fotter.ejs')%>

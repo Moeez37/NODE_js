@@ -1,0 +1,99 @@
+    <%- include('./include/head.ejs')%>
+            <%- include('./include/header.ejs')%>
+            <main>
+                <div class="home-container">
+                    <div class="main-content">
+                        <h2>Home</h2>
+                        <div>
+                            <!-- Image sources:
+                                https://pixabay.com/photos/lego-blocks-duplo-lego-colorful-2458575/
+                                https://pixabay.com/photos/lego-lego-duplo-building-built-190704/
+                            -->
+                            <img
+                                src="/images/blocks.jpg"
+                                alt="Lego blocks"
+                                class="main-img"
+                            /><img
+                                src="/images/lego.jpg"
+                                alt="Lego pieces"
+                                class="lego-img"
+                            />
+                        </div>
+    
+                        <p>
+                            <span id="welcome">
+                                Welcome visitor to CIT's brand new LEGO Building
+                                Club!
+                            </span>
+                            If you share our LOVE &#128151; for building stuff with
+                            LEGO&trade; then it's recommend for you to join our
+                            club. Our club was founded during the COVID-19 pandemic,
+                            a time during which many people have realised their new
+                            found love for LEGO building.
+                        </p>
+    
+                        <p>
+                            If you are interested you can join our club to learn
+                            more about our functions and members. By joining you can
+                            participate in our events and enter our competitions for
+                            a chance to win prizes.
+                        </p>
+    
+                        <p>
+                            If you are new to LEGO building, here are some cool
+                            ideas for you to think about:
+                        </p>
+    
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/JA8pb1mtmcs"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+    
+                    <div class="precautions">
+                        <div class="box">
+                            <h3>COVID-19 Precautions</h3>
+                            <div>
+                                <p>
+                                    The government has imposed a lockdown throughout
+                                    the country. This doesn't mean that we can't
+                                    look for new hobbies to keep ourselves busy, as
+                                    long as it's done in a safe manner with
+                                    <strong>social distancing</strong> in place.
+                                </p>
+                                <p class="notice">
+                                    For this reasion all events scheduled will take
+                                    place online until further notice.
+                                </p>
+                                <p class="hse">
+                                    For more information on the COVID-19 Guidelines,
+                                    visit the
+                                    <a href="https://www2.hse.ie/coronavirus/"
+                                        >HSE's website</a
+                                    >.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="columns">
+                        <a href="/membership" class="column column-1">
+                            <i class="fa fa-user-plus"></i>
+                            Join Us!
+                        </a>
+                        <a href="/events" class="column column-2">
+                            <i class="fa fa-calendar"></i>
+                            Participate In Upcoming Events!
+                        </a>
+                        <a href="/contact-us" class="column column-3">
+                            <i class="fa fa-at"></i>
+                            Get In Touch With Us!
+                        </a>
+                    </div>
+                </div>
+            </main>
+    
+            <%-include('./include/fotter.ejs')%>

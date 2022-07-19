@@ -1,0 +1,18 @@
+{
+  "name": "bloger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon App"
+  },
+  "author": "Moeez Hayder",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "i": "^0.3.7",
+    "nodemon": "^2.0.18"
+  }
+}
