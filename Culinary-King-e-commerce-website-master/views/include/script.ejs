@@ -1,0 +1,14 @@
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmY7HJmUEupsd8UBLj-aTxEsPcKQEWFYaxFA44IcIYrYCjanY1WcTF4zyKYXFQubtbTA/exec'
+            const form = document.forms['submit-googlesheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks you for your valuable feedback!"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>
+</body>
+</html>
